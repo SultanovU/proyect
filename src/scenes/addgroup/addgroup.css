@@ -1,0 +1,185 @@
+.container {
+  width: 100%;
+  padding: 20px;
+  height: 880px;
+  overflow: auto;
+}
+
+.dataGrid {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: auto;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  color: #ffffff;
+}
+
+.headerTitle {
+  border: 1px solid black;
+}
+
+.headerTitle td {
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.plusData {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  font-size: 32px;
+  border: 2px solid #1164e0;
+  position: fixed;
+  bottom: 100px;
+  right: 50px;
+  cursor: pointer;
+  color: #1164e0;
+  background: transparent;
+  z-index: 1;
+}
+
+.addData {
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid black;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.adddataChiled {
+  width: 400px;
+  height: 100%;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-left: 50px;
+  gap: 20px;
+  border: 1px solid black;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    329deg,
+    rgba(0, 0, 0, 1) 16%,
+    rgba(15, 34, 61, 1) 42%,
+    rgba(17, 17, 54, 1) 90%
+  );
+  z-index: 9;
+  overflow: auto;
+}
+
+.adddataChiled label {
+  text-align: start;
+  color: #f9f9f9;
+}
+
+.adddataChiled input {
+  width: 150px;
+  height: 44px;
+  color: black;
+}
+
+.close {
+  display: none;
+}
+
+.no {
+  display: none;
+}
+
+.none {
+  display: none;
+}
+
+.closeAddData {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.449);
+  /* filter: blur(10px); */
+  width: 100%;
+  height: 100%;
+  right: 10px;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.alerts {
+  width: 100%;
+  height: 100vh;
+  background: transparent;
+  color: rgb(154, 62, 62);
+  font-size: 22px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  padding: 20px;
+  display: none;
+}
+
+.alert {
+  height: 45px;
+  padding: 20px 40px;
+  border: 1px solid #070101;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  color: white;
+  border-radius: 5px;
+  background-color: #842028;
+  z-index: 2;
+}
+
+.green {
+  background-color: #0f5132;
+  border-color: #75b798;
+}
+
+/* .dataTr {
+    
+} */
+
+.saveData {
+  width: 80%;
+  height: 60 px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color:#00e279;
+  color: #000000c1;
+  font-weight: 700;
+  border: none;
+  margin-bottom: 60px;
+}
+
+.saveData:hover {
+  background-color: #19583a;
+}
+
+.saveData:active {
+  transform: scale(0.95);
+}
